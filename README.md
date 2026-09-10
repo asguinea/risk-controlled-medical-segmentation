@@ -2,7 +2,7 @@
 
 **How much expert-defined anatomy can a predicted region omit—and how large must that region become to limit the omission?**
 
-This repository studies uncertainty quantification for **retinal optic-cup segmentation** through omission risk, expert disagreement, region size and calibration transfer. The first release candidate follows **Chákṣu → RIGA**, using one frozen scorer and five/six individual expert references. PolypGen is a later expansion.
+This repository studies uncertainty quantification for **retinal optic-cup segmentation** through omission risk, expert disagreement, region size and calibration transfer. The first release follows **Chákṣu → RIGA**, using one frozen scorer and five/six individual expert references. PolypGen is a later expansion.
 
 At a 5% omission budget, the frozen Chákṣu policy returns regions averaging **0.6685% of valid image area**. Observed omission on 204 held-out images is **5.3732%**. The reference averages five individual experts per image; it does not require every expert's mask to be covered equally well. [Read the generated study report](experiments/chaksu/report.md).
 
@@ -15,6 +15,8 @@ Follow the [research story](docs/research-story.md) for the four-budget tradeoff
 ## Run the research artifact
 
 Python 3.11 or newer is required. The base package has **no third-party runtime dependencies**, and replay requires no dataset downloads, model weights or GPU. From the repository or unpacked source archive:
+
+Download the source archive from [v0.1.0](https://github.com/asguinea/risk-controlled-medical-segmentation/releases/tag/v0.1.0), or clone that version with `git clone --branch v0.1.0 https://github.com/asguinea/risk-controlled-medical-segmentation.git` and enter its directory. Then:
 
 ```sh
 python -m venv .venv
@@ -66,7 +68,7 @@ python scripts/verify_reference.py
 
 The optional reference comparison requires Node.js 22.18 or newer with native TypeScript support. It compares 2,000 synthetic cases to the preserved original TypeScript engine without installing npm packages. The 34 Python tests include 10,000 exact quantization checks, 1,000 independent Fraction-oracle cases, decision boundaries, fallback behavior, six-expert weighting, transfer semantics and evidence/figure corruption checks.
 
-The release check exercises the installed wheel from an unrelated environment and the tests/reference scripts from its source archive. It verifies report text, plotted data, figure regeneration, package contents and reachable Git history. Linux/macOS/Windows CI is prepared; its public execution belongs to the publication batch.
+The release check exercises the installed wheel from an unrelated environment and the tests/reference scripts from its source archive. It verifies report text, plotted data, figure regeneration, package contents and reachable Git history. The [research workflow](https://github.com/asguinea/risk-controlled-medical-segmentation/actions/workflows/research.yml) runs on Linux, macOS and Windows, with an additional Python 3.14 check on Linux. Release assets include a verification receipt identifying the tested commit, CI run and artifact hashes.
 
 ## Research context and credit
 
@@ -76,4 +78,4 @@ The calibration method builds on **Conformal Risk Control** by Angelopoulos, Bat
 
 The original software and analytical material are offered under Apache-2.0. Source datasets and model weights are not distributed. RIGA's source catalog records CC BY-NC 4.0; the study covers only the 679/750 images with extractable six-expert references. The source-asset restrictions and provenance limits are explicit in the [RIGA reproduction contract](experiments/riga/reproduction.md).
 
-Use [CITATION.cff](CITATION.cff) for software attribution and cite the underlying methods and datasets separately. This is the locally reviewed **v0.1.0 candidate**; the [release notes](docs/releases/v0.1.0.md) describe its contents and publication status. The actual release date and public repository links will be added when it is published.
+Use [CITATION.cff](CITATION.cff) for software attribution and cite the underlying methods and datasets separately. The [v0.1.0 release](https://github.com/asguinea/risk-controlled-medical-segmentation/releases/tag/v0.1.0) provides versioned source and wheel downloads, a verification receipt and checksums. See the [release notes](docs/releases/v0.1.0.md) for scope and reproduction instructions.

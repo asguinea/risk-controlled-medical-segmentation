@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "Cite this software version and the underlying method, datasets and model architectures. Publication of v0.1.0 is pending."
+message: "Cite this software version and the underlying method, datasets and model architectures."
 type: software
 title: "Risk-Controlled Medical Segmentation: Retinal Omission, Expert Disagreement and Calibration Transfer"
 authors:
@@ -7,6 +7,9 @@ authors:
     given-names: "Alejandro"
     affiliation: "EyeTrustAI"
 version: "0.1.0"
+date-released: "2026-09-10"
+repository-code: "https://github.com/asguinea/risk-controlled-medical-segmentation"
+url: "https://github.com/asguinea/risk-controlled-medical-segmentation/releases/tag/v0.1.0"
 license: Apache-2.0
 abstract: "Research on uncertainty quantification for retinal optic-cup segmentation. Includes exact bounded conformal risk calibration, synthetic verification, frozen aggregate evidence replay for Chákṣu and RIGA, and reproducible figures on omission, region size, expert disagreement and calibration-label requirements."
 keywords:

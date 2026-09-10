@@ -13,6 +13,12 @@ license-files = ["LICENSE", "LICENSE_SCOPE.md", "THIRD_PARTY_NOTICES.md"]
 authors = [{name = "Alejandro Sanchez Guinea"}]
 dependencies = []
 
+[project.urls]
+Repository = "https://github.com/asguinea/risk-controlled-medical-segmentation"
+Documentation = "https://github.com/asguinea/risk-controlled-medical-segmentation/blob/main/README.md"
+Releases = "https://github.com/asguinea/risk-controlled-medical-segmentation/releases"
+Issues = "https://github.com/asguinea/risk-controlled-medical-segmentation/issues"
+
 [project.optional-dependencies]
 figures = ["matplotlib==3.10.7", "numpy==2.4.6"]
 
