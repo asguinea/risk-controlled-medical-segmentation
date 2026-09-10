@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling==1.27.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "risk-controlled-medical-segmentation"
+version = "0.1.0.dev0"
+description = "Exact omission-risk calibration and aggregate evidence replay for retinal image segmentation"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "Apache-2.0"
+license-files = ["LICENSE", "LICENSE_SCOPE.md", "THIRD_PARTY_NOTICES.md"]
+authors = [{name = "Alejandro Sanchez Guinea"}]
+dependencies = []
+
+[project.scripts]
+rcms = "risk_controlled_segmentation.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/risk_controlled_segmentation"]
+
+[tool.hatch.build.targets.sdist]
+include = ["/src", "/tests", "/scripts", "/reference", "/experiments", "/docs", "/README.md", "/LICENSE", "/LICENSE_SCOPE.md", "/THIRD_PARTY_NOTICES.md", "/pyproject.toml", "/.gitignore", "/.gitattributes"]

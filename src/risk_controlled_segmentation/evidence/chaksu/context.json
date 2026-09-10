@@ -1,0 +1,25 @@
+{
+  "dataset_doi": "10.6084/m9.figshare.20123135.v2",
+  "dataset_license": "CC BY 4.0",
+  "expert_count": 5,
+  "images": 1345,
+  "model": "CHAKSU_UNET_RESNET34_FIVE_EXPERT_CUP_V1",
+  "model_sha256": "e55c3a31d05c018cf39c991189c1b817e5d3c9820e240272f256ce4c2c0338a4",
+  "raster_sha256": "afd1fcd8a912540cf00a5b54510e08ed792b096b4bae8bb4044f077cb4add8d2",
+  "role_sha256": "a8c86dd922998f1cbb0f5d797124bd1cd049e80a049a9af49faac6f62637b9a2",
+  "roles": {
+    "final_calibration": 201,
+    "locked_evaluation": 204,
+    "model_development": 605,
+    "warmup_calibration": 201,
+    "warmup_evaluation": 134
+  },
+  "schema": "rcms.chaksu-context.v1",
+  "score_sha256": "0cb54700b8f4ac8462dbb51b7db742fbd2625c7810cae593b0dd21c17e3b9f65",
+  "source_aggregate_sha256": {
+    "d0": "8fd230781ab04113b47bd3c3684747e04c85f17ab30bced56b7399d3c428ad37",
+    "d1": "8173f296d16f4474c58b2a34f9e1150f97562c0686c39f4f83bba31a53bc3402",
+    "d2": "3103d6c4975d1211c11f0e54e04323f6b8734e02524681419a281fefc5a6e3c5"
+  },
+  "unit": "IMAGE"
+}

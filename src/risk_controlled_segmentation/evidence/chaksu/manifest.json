@@ -1,0 +1,11 @@
+{
+  "files": {
+    "calibration_curve.json": "e1f2e2939f3e246e7712dcc4ef286ec612bc0350d2c0e97d0e9223844b01dba9",
+    "context.json": "023e5736f181ec42d85a4536a9253f6cee9b1a36cbd14712eac15f1cec533b3f",
+    "development.json": "23145bf784b1ca9d13f571c661ffb83b239eae9cd9d12b2b26ae8060179582b6",
+    "final.json": "c17ec5064294ded220fc761dedb1bca896842c3ed6e5d3795fd09cf2dbce8b25",
+    "warmup_expected.json": "9b546b1d721103fe9d9b1a38f7d8dfdda0da5404a449c33219f5a63a99a8de1d",
+    "warmup_runs.json": "38a4746a2a0509a6a49c582b963f9371a6741c1ea352f5ffa3f1d4cb44633105"
+  },
+  "schema": "rcms.evidence-manifest.v1"
+}
