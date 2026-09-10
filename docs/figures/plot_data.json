@@ -1,0 +1,550 @@
+{
+  "disagreement": {
+    "chaksu": [
+      {
+        "area_percent": 0.7748654014185857,
+        "expert_normalized_size": 1.1541980509751,
+        "images": 76,
+        "origin": "local",
+        "raw_omission_percent": 5.528378479677966,
+        "stratum": "LOW"
+      },
+      {
+        "area_percent": 0.6572943793402778,
+        "expert_normalized_size": 1.3146893008219698,
+        "images": 75,
+        "origin": "local",
+        "raw_omission_percent": 4.58550381762776,
+        "stratum": "MEDIUM"
+      },
+      {
+        "area_percent": 0.5316584365172955,
+        "expert_normalized_size": 1.4090380765640576,
+        "images": 53,
+        "origin": "local",
+        "raw_omission_percent": 6.265491423878482,
+        "stratum": "HIGH"
+      }
+    ],
+    "riga": [
+      {
+        "area_percent": 0.46587302050394325,
+        "expert_normalized_size": 0.9988495658252359,
+        "images": 63,
+        "origin": "transferred",
+        "raw_omission_percent": 19.11521127763884,
+        "stratum": "LOW"
+      },
+      {
+        "area_percent": 0.3054425413466812,
+        "expert_normalized_size": 1.1547333003286409,
+        "images": 68,
+        "origin": "transferred",
+        "raw_omission_percent": 20.124652607416223,
+        "stratum": "MEDIUM"
+      },
+      {
+        "area_percent": 0.3110644233280521,
+        "expert_normalized_size": 1.4485704572861737,
+        "images": 51,
+        "origin": "transferred",
+        "raw_omission_percent": 18.922763258580304,
+        "stratum": "HIGH"
+      },
+      {
+        "area_percent": 1.7568174309087317,
+        "expert_normalized_size": 4.408945853236213,
+        "images": 63,
+        "origin": "local",
+        "raw_omission_percent": 3.2172929150962397,
+        "stratum": "LOW"
+      },
+      {
+        "area_percent": 1.891779064596824,
+        "expert_normalized_size": 7.687337062397218,
+        "images": 68,
+        "origin": "local",
+        "raw_omission_percent": 3.9840349024685944,
+        "stratum": "MEDIUM"
+      },
+      {
+        "area_percent": 1.6191738597172802,
+        "expert_normalized_size": 8.3651056360886,
+        "images": 51,
+        "origin": "local",
+        "raw_omission_percent": 3.0401542440170415,
+        "stratum": "HIGH"
+      }
+    ]
+  },
+  "final": {
+    "chaksu": [
+      {
+        "area_percent": 0.897034788443372,
+        "budget_percent": 1.0,
+        "expert_normalized_size": 1.7539900514261622,
+        "images": 204,
+        "origin": "local",
+        "raw_omission_percent": 0.7721065403626045
+      },
+      {
+        "area_percent": 0.6684546377144608,
+        "budget_percent": 5.0,
+        "expert_normalized_size": 1.2794106249688744,
+        "images": 204,
+        "origin": "local",
+        "raw_omission_percent": 5.37323821687827
+      },
+      {
+        "area_percent": 0.5705041823044321,
+        "budget_percent": 10.0,
+        "expert_normalized_size": 1.076481133705694,
+        "images": 204,
+        "origin": "local",
+        "raw_omission_percent": 11.21649686299799
+      },
+      {
+        "area_percent": 0.48276614519505723,
+        "budget_percent": 20.0,
+        "expert_normalized_size": 0.8961188613985819,
+        "images": 204,
+        "origin": "local",
+        "raw_omission_percent": 19.798064594452704
+      }
+    ],
+    "riga": [
+      {
+        "area_percent": 0.8031531097159218,
+        "budget_percent": 1.0,
+        "expert_normalized_size": 2.8160037856030495,
+        "images": 182,
+        "origin": "transferred",
+        "raw_omission_percent": 5.735262842365401
+      },
+      {
+        "area_percent": 8.905794273373061,
+        "budget_percent": 1.0,
+        "expert_normalized_size": 32.78242586142437,
+        "images": 182,
+        "origin": "local",
+        "raw_omission_percent": 0.21143705654442546
+      },
+      {
+        "area_percent": 0.3625515312805132,
+        "budget_percent": 5.0,
+        "expert_normalized_size": 1.183112529620507,
+        "images": 182,
+        "origin": "transferred",
+        "raw_omission_percent": 19.438437439467833
+      },
+      {
+        "area_percent": 1.7686722054143704,
+        "budget_percent": 5.0,
+        "expert_normalized_size": 6.742433496908851,
+        "images": 182,
+        "origin": "local",
+        "raw_omission_percent": 3.454130183867014
+      },
+      {
+        "area_percent": 0.2710039020938778,
+        "budget_percent": 10.0,
+        "expert_normalized_size": 0.8589943851637736,
+        "images": 182,
+        "origin": "transferred",
+        "raw_omission_percent": 32.29678869885
+      },
+      {
+        "area_percent": 0.5894882056627853,
+        "budget_percent": 10.0,
+        "expert_normalized_size": 1.9954406056301157,
+        "images": 182,
+        "origin": "local",
+        "raw_omission_percent": 6.879530831750085
+      },
+      {
+        "area_percent": 0.19445480935549503,
+        "budget_percent": 20.0,
+        "expert_normalized_size": 0.5914553849799271,
+        "images": 182,
+        "origin": "transferred",
+        "raw_omission_percent": 47.94213365043617
+      },
+      {
+        "area_percent": 0.4033320054922328,
+        "budget_percent": 20.0,
+        "expert_normalized_size": 1.327030098893596,
+        "images": 182,
+        "origin": "local",
+        "raw_omission_percent": 15.481821530313688
+      }
+    ]
+  },
+  "primary_area_ratio": 4.878402248550742,
+  "schema": "RCMS_FIGURES_V1",
+  "sources": {
+    "chaksu": [
+      {
+        "area_percent": 0.464166379442402,
+        "expert_normalized_size": 1.206769447609441,
+        "images": 17,
+        "origin": "local",
+        "raw_omission_percent": 7.762388124546753,
+        "source": "Bosch"
+      },
+      {
+        "area_percent": 0.9101549784342449,
+        "expert_normalized_size": 1.3106790105371269,
+        "images": 16,
+        "origin": "local",
+        "raw_omission_percent": 5.2720758178220635,
+        "source": "Forus"
+      },
+      {
+        "area_percent": 0.6661487601653874,
+        "expert_normalized_size": 1.2837065655888649,
+        "images": 171,
+        "origin": "local",
+        "raw_omission_percent": 5.145185877431106,
+        "source": "Remidio"
+      }
+    ],
+    "riga": [
+      {
+        "area_percent": 0.3091683139556939,
+        "expert_normalized_size": 1.035325783844518,
+        "images": 108,
+        "origin": "transferred",
+        "raw_omission_percent": 21.75367955845432,
+        "source": "MESSIDOR"
+      },
+      {
+        "area_percent": 0.31891720214478764,
+        "expert_normalized_size": 1.5832585871118658,
+        "images": 51,
+        "origin": "transferred",
+        "raw_omission_percent": 8.62021304691067,
+        "source": "BIN_RUSHED"
+      },
+      {
+        "area_percent": 0.7099749337588823,
+        "expert_normalized_size": 0.98978729534866,
+        "images": 23,
+        "origin": "transferred",
+        "raw_omission_percent": 32.55510244685368,
+        "source": "MAGRABI"
+      },
+      {
+        "area_percent": 1.9461130717357005,
+        "expert_normalized_size": 7.0734549682168915,
+        "images": 108,
+        "origin": "local",
+        "raw_omission_percent": 3.4115450334512536,
+        "source": "MESSIDOR"
+      },
+      {
+        "area_percent": 1.5452384674544302,
+        "expert_normalized_size": 8.165128300419207,
+        "images": 51,
+        "origin": "local",
+        "raw_omission_percent": 0.43230895934985814,
+        "source": "BIN_RUSHED"
+      },
+      {
+        "area_percent": 1.43091164338191,
+        "expert_normalized_size": 2.0334007195046495,
+        "images": 23,
+        "origin": "local",
+        "raw_omission_percent": 10.354655344531242,
+        "source": "MAGRABI"
+      }
+    ]
+  },
+  "synthetic": {
+    "description": "One toy image, five expert masks, five valid positions and one excluded padding position. This illustrates nested regions; it is not a medical result or calibration sample.",
+    "expert_masks": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        2,
+        3
+      ]
+    ],
+    "regions": [
+      {
+        "included_valid_positions": [
+          0
+        ],
+        "lambda": "0/1",
+        "quantized_omission": "36667/50000",
+        "raw_omission": "11/15",
+        "valid_area_fraction": 0.2
+      },
+      {
+        "included_valid_positions": [
+          0,
+          1
+        ],
+        "lambda": "1/4",
+        "quantized_omission": "20001/50000",
+        "raw_omission": "2/5",
+        "valid_area_fraction": 0.4
+      },
+      {
+        "included_valid_positions": [
+          0,
+          1,
+          2
+        ],
+        "lambda": "1/2",
+        "quantized_omission": "1667/25000",
+        "raw_omission": "1/15",
+        "valid_area_fraction": 0.6
+      },
+      {
+        "included_valid_positions": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "lambda": "1/1",
+        "quantized_omission": "0/1",
+        "raw_omission": "0/1",
+        "valid_area_fraction": 1.0
+      }
+    ],
+    "synthetic": true
+  },
+  "warmup": {
+    "chaksu": [
+      {
+        "area_percent": {
+          "median": 0.9987864328261039,
+          "p05": 0.9133704266144861,
+          "p95": 1.1109783874815375
+        },
+        "lambda": {
+          "median": 0.3935,
+          "p05": 0.18575,
+          "p95": 0.7152999999999999
+        },
+        "n": 20,
+        "raw_omission_percent": {
+          "median": 1.4329750843262132,
+          "p05": 1.0094898272573483,
+          "p95": 2.1133232204562433
+        },
+        "replicates": 100
+      },
+      {
+        "area_percent": {
+          "median": 0.7448528536516636,
+          "p05": 0.7246848718443913,
+          "p95": 0.7798759498406406
+        },
+        "lambda": {
+          "median": 0.036,
+          "p05": 0.0299,
+          "p95": 0.05
+        },
+        "n": 50,
+        "raw_omission_percent": {
+          "median": 5.01958892208683,
+          "p05": 4.119185660054322,
+          "p95": 5.6383456443740165
+        },
+        "replicates": 100
+      },
+      {
+        "area_percent": {
+          "median": 0.7214294737251244,
+          "p05": 0.7002379763778763,
+          "p95": 0.7386126921544621
+        },
+        "lambda": {
+          "median": 0.029,
+          "p05": 0.024,
+          "p95": 0.034
+        },
+        "n": 100,
+        "raw_omission_percent": {
+          "median": 5.745956219855538,
+          "p05": 5.192607562503614,
+          "p95": 6.52676443745346
+        },
+        "replicates": 100
+      },
+      {
+        "area_percent": {
+          "median": 0.7134053244519589,
+          "p05": 0.7002379763778763,
+          "p95": 0.7214294737251244
+        },
+        "lambda": {
+          "median": 0.027,
+          "p05": 0.024,
+          "p95": 0.029
+        },
+        "n": 150,
+        "raw_omission_percent": {
+          "median": 6.032548814890481,
+          "p05": 5.745956219855538,
+          "p95": 6.52676443745346
+        },
+        "replicates": 100
+      },
+      {
+        "area_percent": {
+          "median": 0.7048649574393656,
+          "p05": 0.7048649574393656,
+          "p95": 0.7048649574393656
+        },
+        "lambda": {
+          "median": 0.025,
+          "p05": 0.025,
+          "p95": 0.025
+        },
+        "n": 200,
+        "raw_omission_percent": {
+          "median": 6.3527485723214925,
+          "p05": 6.3527485723214925,
+          "p95": 6.3527485723214925
+        },
+        "replicates": 100
+      },
+      {
+        "area_percent": {
+          "median": 0.7048649574393656,
+          "p05": 0.7048649574393656,
+          "p95": 0.7048649574393656
+        },
+        "lambda": {
+          "median": 0.025,
+          "p05": 0.025,
+          "p95": 0.025
+        },
+        "n": 201,
+        "raw_omission_percent": {
+          "median": 6.3527485723214925,
+          "p05": 6.3527485723214925,
+          "p95": 6.3527485723214925
+        },
+        "replicates": 1
+      }
+    ],
+    "riga": [
+      {
+        "area_percent": {
+          "median": 7.11874018994301,
+          "p05": 1.9060602008665675,
+          "p95": 62.28579220368784
+        },
+        "lambda": {
+          "median": 0.967,
+          "p05": 0.6414500000000001,
+          "p95": 0.987
+        },
+        "n": 20,
+        "raw_omission_percent": {
+          "median": 0.025578802208566308,
+          "p05": 0.0,
+          "p95": 0.9770418648849326
+        },
+        "replicates": 100
+      },
+      {
+        "area_percent": {
+          "median": 4.57079559169922,
+          "p05": 1.1831367268508735,
+          "p95": 6.2789185078874725
+        },
+        "lambda": {
+          "median": 0.945,
+          "p05": 0.3304,
+          "p95": 0.96305
+        },
+        "n": 50,
+        "raw_omission_percent": {
+          "median": 0.08820604124101315,
+          "p05": 0.034701019767091786,
+          "p95": 2.3663670197598425
+        },
+        "replicates": 100
+      },
+      {
+        "area_percent": {
+          "median": 3.315438661644987,
+          "p05": 1.4289897350671221,
+          "p95": 5.079576570781836
+        },
+        "lambda": {
+          "median": 0.898,
+          "p05": 0.43385,
+          "p95": 0.953
+        },
+        "n": 100,
+        "raw_omission_percent": {
+          "median": 0.2207122013497855,
+          "p05": 0.05870221178297526,
+          "p95": 1.804036727125808
+        },
+        "replicates": 100
+      },
+      {
+        "area_percent": {
+          "median": 3.338676567869509,
+          "p05": 1.8298567893616842,
+          "p95": 4.1197937069560435
+        },
+        "lambda": {
+          "median": 0.9,
+          "p05": 0.6137,
+          "p95": 0.935
+        },
+        "n": 150,
+        "raw_omission_percent": {
+          "median": 0.21522043853983186,
+          "p05": 0.11995806738756343,
+          "p95": 1.077814989456878
+        },
+        "replicates": 100
+      },
+      {
+        "area_percent": {
+          "median": 3.019509282832526,
+          "p05": 3.019509282832526,
+          "p95": 3.019509282832526
+        },
+        "lambda": {
+          "median": 0.871,
+          "p05": 0.871,
+          "p95": 0.871
+        },
+        "n": 181,
+        "raw_omission_percent": {
+          "median": 0.3046437688213455,
+          "p05": 0.3046437688213455,
+          "p95": 0.3046437688213455
+        },
+        "replicates": 1
+      }
+    ]
+  }
+}

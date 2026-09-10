@@ -28,4 +28,22 @@ The Python tests compare integer decisions against a direct Fraction oracle over
 
 Run `rcms chaksu --output results/chaksu` or `rcms riga --output results/riga` to generate a report. The corresponding `experiments/<study>/report.md` is the checked-in rendering. `rcms verify` verifies both studies, totaling eight final calibration decisions and 902 warm-up aggregate runs. The four source policies evaluated on RIGA are not four additional calibrations. Dataset populations, expert panels and performance are not pooled.
 
-Source images, overlays, masks, score arrays, per-image records, source-linked assignments and weights are not bundled. Endoscopic experiments remain a later expansion. Plotting and the public release package review follow in subsequent batches.
+Source images, overlays, study masks, score arrays, per-image records, source-linked assignments and weights are not bundled. Endoscopic experiments remain a later expansion. The five research figures contain aggregate charts and an explicitly synthetic mask example; see the [figure contract](figures/README.md).
+
+## Locked release checks
+
+The base wheel has no third-party runtime dependencies. The `figures` extra pins Matplotlib 3.10.7 and NumPy 2.4.6. [uv.lock](../uv.lock) records transitive versions and hashes, including the separate build/metadata-check tools. With uv 0.11.16 and Node.js 22.18+ available:
+
+```sh
+uv sync --locked --extra figures --group checks --python 3.11
+uv run --locked --extra figures --group checks python scripts/check_distribution.py --history --output results/distribution.json
+uv run --locked --extra figures --group checks python scripts/verify_reproduction.py --output results/reproduction
+```
+
+The reproduction script builds a source archive and wheel, compares their inventories and bytes with the candidate, installs the wheel into a fresh temporary environment, and runs the source archive's 34 tests and 2,000 reference comparisons against that installation. It checks both report texts and plotted inputs, renders all five figure pairs twice, and verifies determinism within that environment. Replay and rendering run with network access blocked. The base installation is exercised before plotting dependencies are installed.
+
+The source archive contains the reports, figures, citation file, lock, tests, TypeScript reference and release documentation. The wheel contains the Python package, all aggregate evidence and the figure generator, plus distribution metadata and license files. No source checkout, dataset or GPU is needed by the installed commands.
+
+`check_distribution.py --history` reviews all reachable commits as well as the candidate's files against the allowed content types and paths. A separate Gitleaks scan covers Git history. These checks catch specified content leaks and integrity failures; they do not prove historical exchangeability, model quality or complete absence of every possible sensitive datum.
+
+Cross-platform checks require identical report text after newline normalization, exact integers/rationals/structures, and absolute tolerance 1e-12 on plotted floating-point inputs. Image bytes need not match between operating systems. The prepared workflow runs these checks on Linux, macOS and Windows after publication; local success does not claim that those remote jobs have already run.

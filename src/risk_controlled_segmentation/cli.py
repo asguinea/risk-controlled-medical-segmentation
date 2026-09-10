@@ -32,6 +32,10 @@ def main():
     report.add_argument('--output',type=Path,help='Directory for report.json and report.md; otherwise JSON on stdout')
     riga=sub.add_parser('riga',help='Regenerate RIGA transfer, local calibration and warm-up reports')
     riga.add_argument('--output',type=Path,help='Directory for report.json and report.md; otherwise JSON on stdout')
+    figures=sub.add_parser('figures',help='Render aggregate research figures (requires the figures extra)')
+    figures.add_argument('--output',type=Path,required=True)
+    figure_check=sub.add_parser('verify-figures',help='Verify plotted data against both studies; no plotting dependencies needed')
+    figure_check.add_argument('data',type=Path,help='Path to plot_data.json')
     args=parser.parse_args()
     try:
         if args.command=='verify':
@@ -43,6 +47,12 @@ def main():
                         'final_calibrations_replayed':8,'warmup_aggregate_runs':902,
                         'note':'Inventory totals; studies and expert references are not pooled.'}
         elif args.command=='demo':result=demo()
+        elif args.command=='figures':
+            from .figures import generate_figures
+            result=generate_figures(args.output)
+        elif args.command=='verify-figures':
+            from .figures import verify_figure_data
+            result=verify_figure_data(args.data)
         else:result=report_chaksu() if args.command=='chaksu' else report_riga()
         if args.command in ('chaksu','riga') and args.output:
             args.output.mkdir(parents=True,exist_ok=True)
