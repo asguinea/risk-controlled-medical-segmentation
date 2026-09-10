@@ -1,6 +1,6 @@
 # Reproduction contract
 
-The installed package bundles reviewed aggregate JSON in `risk_controlled_segmentation/evidence/chaksu`. The wheel and source distribution both contain these files. Nothing is fetched at runtime.
+The installed package bundles reviewed aggregate JSON in `risk_controlled_segmentation/evidence/chaksu` and `risk_controlled_segmentation/evidence/riga`. The wheel and source distribution both contain these files. Nothing is fetched at runtime. The table below describes Chákṣu; the [RIGA contract](../experiments/riga/reproduction.md) documents its six-expert reference and distinct input provenance.
 
 | File | Meaning and verification |
 | --- | --- |
@@ -26,4 +26,6 @@ Repeated bands describe reused warm-up pools. The n=201 point contains one calib
 
 The Python tests compare integer decisions against a direct Fraction oracle over synthetic per-image losses, including very large integers. They test upward quantization, exact boundaries, all-Ω fallback, expert weighting, padding, and a counterexample where aggregate monotonicity conceals a nonmonotone image loss. The TypeScript reference comparison provides a separate implementation check on synthetic cases.
 
-Run `rcms chaksu --output results/chaksu` to generate the report. `experiments/chaksu/report.md` is the checked-in rendering of that output. Source images, overlays, masks, score arrays, per-image records, source-linked assignments and weights are not bundled. RIGA and endoscopic experiments are outside the current S2 implementation. Plotting and the public release package review follow in subsequent batches.
+Run `rcms chaksu --output results/chaksu` or `rcms riga --output results/riga` to generate a report. The corresponding `experiments/<study>/report.md` is the checked-in rendering. `rcms verify` verifies both studies, totaling eight final calibration decisions and 902 warm-up aggregate runs. The four source policies evaluated on RIGA are not four additional calibrations. Dataset populations, expert panels and performance are not pooled.
+
+Source images, overlays, masks, score arrays, per-image records, source-linked assignments and weights are not bundled. Endoscopic experiments remain a later expansion. Plotting and the public release package review follow in subsequent batches.

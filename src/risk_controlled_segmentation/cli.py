@@ -5,6 +5,7 @@ from pathlib import Path
 
 from .method import image_omission, nested_region, rational_text
 from .study import markdown_report, report_chaksu, verify_chaksu
+from .riga import markdown_report as riga_markdown, report_riga, verify_riga
 
 
 def demo():
@@ -24,17 +25,30 @@ def demo():
 def main():
     parser=argparse.ArgumentParser(description='Medical segmentation research: exact calibration and aggregate replay')
     sub=parser.add_subparsers(dest='command',required=True)
-    sub.add_parser('verify',help='Verify bundled evidence and replay four final calibrations')
+    verify=sub.add_parser('verify',help='Verify both studies, or select one')
+    verify.add_argument('--study',choices=('all','chaksu','riga'),default='all')
     sub.add_parser('demo',help='Show a synthetic five-expert omission example')
     report=sub.add_parser('chaksu',help='Regenerate the Chákṣu report and descriptive warm-up summaries')
     report.add_argument('--output',type=Path,help='Directory for report.json and report.md; otherwise JSON on stdout')
+    riga=sub.add_parser('riga',help='Regenerate RIGA transfer, local calibration and warm-up reports')
+    riga.add_argument('--output',type=Path,help='Directory for report.json and report.md; otherwise JSON on stdout')
     args=parser.parse_args()
     try:
-        result=verify_chaksu() if args.command=='verify' else demo() if args.command=='demo' else report_chaksu()
-        if args.command=='chaksu' and args.output:
+        if args.command=='verify':
+            if args.study=='chaksu':result=verify_chaksu()
+            elif args.study=='riga':result=verify_riga()
+            else:
+                chaksu_result,riga_result=verify_chaksu(),verify_riga()
+                result={'status':'PASS','studies':{'chaksu':chaksu_result,'riga':riga_result},
+                        'final_calibrations_replayed':8,'warmup_aggregate_runs':902,
+                        'note':'Inventory totals; studies and expert references are not pooled.'}
+        elif args.command=='demo':result=demo()
+        else:result=report_chaksu() if args.command=='chaksu' else report_riga()
+        if args.command in ('chaksu','riga') and args.output:
             args.output.mkdir(parents=True,exist_ok=True)
             (args.output/'report.json').write_text(json.dumps(result,indent=2,sort_keys=True,allow_nan=False)+'\n',encoding='utf-8')
-            (args.output/'report.md').write_text(markdown_report(result),encoding='utf-8')
+            render=markdown_report if args.command=='chaksu' else riga_markdown
+            (args.output/'report.md').write_text(render(result),encoding='utf-8')
             print(json.dumps({'status':'PASS','output':str(args.output)}))
         else:
             print(json.dumps(result,indent=2,sort_keys=True,allow_nan=False))

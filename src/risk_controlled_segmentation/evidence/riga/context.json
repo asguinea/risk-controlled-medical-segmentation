@@ -1,0 +1,71 @@
+{
+  "dataset_doi": "10.7302/Z23R0R29",
+  "dataset_license": "CC BY-NC 4.0",
+  "eligible_by_source": {
+    "BIN_RUSHED": 190,
+    "MAGRABI": 91,
+    "MESSIDOR": 398
+  },
+  "eligible_images": 679,
+  "excluded_images": 71,
+  "expert_count": 6,
+  "input_provenance": "S1 observed fingerprint, numerically matched to historically bound decisions; no original final input digest found in bound D2 summary",
+  "locked_evaluated_after_policy_freeze": true,
+  "model_sha256": "e55c3a31d05c018cf39c991189c1b817e5d3c9820e240272f256ce4c2c0338a4",
+  "official_by_source": {
+    "BIN_RUSHED": 195,
+    "MAGRABI": 95,
+    "MESSIDOR": 460
+  },
+  "official_images": 750,
+  "publication_scope": "Original code and aggregate research evidence only; no image/reference/score material",
+  "raster_sha256": "afd1fcd8a912540cf00a5b54510e08ed792b096b4bae8bb4044f077cb4add8d2",
+  "reference": {
+    "fused_reference": false,
+    "line_closure_annotations": 10,
+    "positive_masks_required": 6,
+    "representation": "six expert-marked overlays reconstructed into individual optic-cup masks"
+  },
+  "role_overlap": 0,
+  "role_sha256": "42a0b36fea16b8322a0c9669060eaae9d33e698e76d0b9eb199bf30918eaf179",
+  "roles": {
+    "final_calibration": 181,
+    "locked_evaluation": 182,
+    "warmup_calibration": 181,
+    "warmup_evaluation": 135
+  },
+  "roles_by_source": {
+    "final_calibration": {
+      "BIN_RUSHED": 47,
+      "MAGRABI": 29,
+      "MESSIDOR": 105
+    },
+    "locked_evaluation": {
+      "BIN_RUSHED": 51,
+      "MAGRABI": 23,
+      "MESSIDOR": 108
+    },
+    "warmup_calibration": {
+      "BIN_RUSHED": 51,
+      "MAGRABI": 22,
+      "MESSIDOR": 108
+    },
+    "warmup_evaluation": {
+      "BIN_RUSHED": 41,
+      "MAGRABI": 17,
+      "MESSIDOR": 77
+    }
+  },
+  "schema": "rcms.riga-context.v1",
+  "score_sha256": "205504c2ec35954592f9b05f2e7498087719b3b7b3c586fc4d34d2cbf7383509",
+  "source_aggregate_sha256": {
+    "d0": "abf16d3960881984d3763a0751fd42ff30c4e9c1b6f9d1750b8e76b68a296b5f",
+    "d1": "2dce928b1600da6b50eb09acc847aad879265a7308b5e6a8ae6294a5dadcb504",
+    "d2": "0458130403b6a7ce3a0c218a014f46ea91728c1316f8dff2732790c825f953cf"
+  },
+  "source_policy_freeze_sha256": "c4e278dce78310a6b52938addaeadd3fb44fdf3e983c846fc2f1ba755f6b19f6",
+  "standalone_deposit_readme_reviewed": false,
+  "subject_linkage_available": false,
+  "target_policy_freeze_sha256": "f6a0b3c3b00f373a0749f1a4dae5f698edf1f1d874a26c43c4574e8924966e30",
+  "unit": "IMAGE"
+}

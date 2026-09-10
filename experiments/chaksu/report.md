@@ -45,6 +45,6 @@ Disagreement correlates positively with expert-normalized size (Spearman 0.3668)
 
 ## Reproduction boundary
 
-The public curve contains summed quantized loss at all 1,001 grid points. It supports exact selection replay, but cannot verify the original images, expert annotations, per-image monotonicity, model training or inference. Warm-up candidate traces and per-image records are not included. Figures and RIGA transfer are planned subsequent additions.
+The public curve contains summed quantized loss at all 1,001 grid points. It supports exact selection replay, but cannot verify the original images, expert annotations, per-image monotonicity, model training or inference. Warm-up candidate traces and per-image records are not included. RIGA transfer is presented in the separate RIGA report; figures are a subsequent addition.
 
 Source: [Chákṣu v2](https://doi.org/10.6084/m9.figshare.20123135.v2). Method: [Conformal Risk Control](https://arxiv.org/abs/2208.02814).
